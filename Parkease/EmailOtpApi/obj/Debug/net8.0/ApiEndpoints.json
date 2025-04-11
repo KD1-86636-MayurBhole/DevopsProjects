@@ -1,0 +1,34 @@
+[
+  {
+    "ContainingType": "EmailOtpApi.Controllers.OtpController",
+    "Method": "SendEmail",
+    "RelativePath": "api/Otp/send-Email",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "EmailOtpApi.Controllers.EmailBody",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EmailOtpApi.Controllers.OtpController",
+    "Method": "SendOtp",
+    "RelativePath": "api/Otp/send-otp",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "email",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
