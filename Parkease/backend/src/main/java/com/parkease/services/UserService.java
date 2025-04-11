@@ -1,0 +1,32 @@
+package com.parkease.services;
+
+import java.util.List;
+
+import com.parkease.dto.ApiResponse;
+import com.parkease.dto.UserDto;
+import com.parkease.dto.UserLogInDto;
+import com.parkease.eums.Role;
+
+import jakarta.validation.Valid;
+
+public interface UserService {
+
+	ApiResponse signupUser(UserDto userDto);
+
+	UserDto logInUser(@Valid UserLogInDto userLoginDto);
+
+	List<UserDto> getAllUsers();
+
+	ApiResponse updateProfile(long id,UserDto userDto);
+
+	UserDto findByUserId(Long id);
+
+	ApiResponse blockUndblockUser(long id);
+
+	ApiResponse forgetPassword(UserDto userDto);
+
+	long getId(String email);
+
+	Role getRole(String email);
+
+}
